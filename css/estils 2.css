@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+
+}
+
+ /*Fuente Sf_pro_display*/
+ @font-face {
+    font-family: sf_pro_display;
+    src: url(../fonts/sf_pro_display/SFProDisplay-Bold.woff) format('woff');
+    src: url(../fonts/sf_pro_display/SFProDisplay-Bold.svg) format('svg');
+    src: url(../fonts/sf_pro_display/SFProDisplay-Bold.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Fuente Monserrat*/
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat1/Montserrat-Thin.woff) format('woff');
+    src: url(../fonts/montserrat1/Montserrat-Thin.svg) format('svg');
+    src: url(../fonts/montserrat1/Montserrat-Thin.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: montserratregular;
+    src: url(../fonts/montserratregular/Montserrat-Regular.svg) format('woff');
+    src: url(../fonts/montserratregular/Montserrat-Regular.woff) format('svg');
+    src: url(../fonts/montserratregular/Montserrat-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*autors*/
+
+.gradient {
+    width: 390px;
+    height: 844px;
+    background: linear-gradient(transparent, #0D1E58, black);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imagen {
+    width: 470px;
+    height: 924px;
+    background-image: url(../img/fons\ difuminat.png);
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.elipse {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url(../img/Elipse\ 249.png);
+    position: absolute;
+    background-size: 100%;
+    left: 70px;
+    top: 50px;
+    z-index: 8;
+}
+
+p {
+    font-family: montserratregular;
+    font-size: 22px;
+    position: absolute;
+    top: 260px;
+    left: 70px;
+    color: white;
+}
+
+p2 {
+    font-family: montserratregular;
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    top: 180px;
+    left: 6px;
+}
+
+p3 {
+    font-family: montserratregular;
+    font-size: 15px;
+    position: absolute;
+    color: rgb(155, 155, 155);
+    top: 200px;
+    left: 30px;
+}
+
+p4 {
+    font-family: montserratregular;
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    top: 180px;
+    left: 50px;
+}
+
+p5 {
+    font-family: montserratregular;
+    font-size: 15px;
+    position: absolute;
+    color: rgb(155, 155, 155);
+    top: 200px;
+    left: 49px;
+}
+
+.elipse2 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url(../img/Elipse\ 71.png);
+    position: absolute;
+    background-size: 100%;
+    left: 210px;
+    top: 400px;
+    z-index: 8;
+}
+
+.elipse3 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url(../img/Elipse\ 240.png);
+    position: absolute;
+    background-size: 100%;
+    left: 15px;
+    top: 400px;
+    z-index: 8;
+}
+
+.elipse4 {
+    width: 170px;
+    height: 170px;
+    background-image: url(../img/Rectángulo\ 655.png);
+    position: absolute;
+    background-size: 100%;
+    left: 210px;
+    top: 650px;
+    z-index: 8;
+}
+
+.elipse5 {
+    width: 170px;
+    height: 170px;
+    background-image: url(../img/Rectángulo\ 660.png);
+    position: absolute;
+    background-size: 100%;
+    left: 15px;
+    top: 650px;
+    z-index: 8;
+}
+
+.reproduir {
+    width: 190px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    z-index: 8;
+    top: 340px;
+    left: 100px;
+    opacity: 50%;
+    border-radius: 10px;
+}
+
+.play2 {
+    
+    border-top: 15px solid transparent;
+    border-left: 25px solid white;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    z-index: 8;
+    top: 350px;
+    left: 120px;
+}
+
+p6 {
+    font-family: montserratregular;
+    position: absolute;
+    top: 355px;
+    left: 170px;
+    color: white;
+    z-index: 8;
+}
+
+.enrere {
+    position: fixed;
+    top: 46px;
+    left: 14px;
+    z-index: 9;
+    width: 200px;
+    height: 200px;
+}

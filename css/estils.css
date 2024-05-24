@@ -1,0 +1,1259 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: black;
+  }
+  
+  #start {
+    background: purple;
+  }
+  /*Fondo Pantalla bienvenida*/
+  #welcome {
+    background-image: url(../img/Fons.png);
+    background-size: cover;
+  }
+  
+  h1 {
+    color: white;
+    font-family: sf_pro_display;
+    position: absolute;
+    left: 2.75rem;
+    top: 25rem;
+    font-size: 1.5rem;
+  }
+  /*Fuente Sf_pro_display*/
+  @font-face {
+    font-family: sf_pro_display;
+    src: url(../fonts/sf_pro_display/SFProDisplay-Bold.woff) format("woff");
+    src: url(../fonts/sf_pro_display/SFProDisplay-Bold.svg) format("svg");
+    src: url(../fonts/sf_pro_display/SFProDisplay-Bold.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /*Fuente Monserrat*/
+  @font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat1/Montserrat-Thin.woff) format("woff");
+    src: url(../fonts/montserrat1/Montserrat-Thin.svg) format("svg");
+    src: url(../fonts/montserrat1/Montserrat-Thin.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /*Fuente Monserrat regular*/
+  @font-face {
+    font-family: montserratregular;
+    src: url(../fonts/montserratregular/Montserrat-Regular.svg) format("woff");
+    src: url(../fonts/montserratregular/Montserrat-Regular.woff) format("svg");
+    src: url(../fonts/montserratregular/Montserrat-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /*Fuente Monserrat bold*/
+  @font-face {
+    font-family: montserratbold;
+    src: url(../fonts/montserratbold/Montserrat-Bold.svg) format("woff");
+    src: url(../fonts/montserratbold/Montserrat-Bold.woff) format("svg");
+    src: url(../fonts/montserratbold/Montserrat-Bold.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  #text {
+    color: white;
+    font-family: montserrat;
+    position: absolute;
+    left: 4.813rem;
+    top: 30rem;
+  }
+  
+  #idioma {
+    width: 20rem;
+    height: 2rem;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 5rem;
+    color: rgb(255, 255, 255);
+    font-family: montserrat;
+    position: absolute;
+    left: 4.813rem;
+    top: 40rem;
+  }
+  #ubicacio {
+    width: 20rem;
+    height: 2rem;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
+    font-family: montserrat;
+    border-radius: 5rem;
+    position: absolute;
+    left: 4.813rem;
+    top: 43rem;
+  }
+  
+  #login {
+    background: green;
+  }
+  #register {
+    background: greenyellow;
+  }
+  #politiques {
+    background: gray;
+  }
+  #home {
+    background: #0d1e58;
+  }
+  
+  #start img {
+    position: absolute;
+    width: 10rem;
+    height: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5rem, -4rem);
+  }
+  
+  .botonera {
+    background: rgb(0 0 0 / 60%);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .botonera ul li {
+    display: block;
+    width: 20vw;
+    height: 10vh;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+  
+  .botonera ul li:hover {
+    background-color: navy;
+  }
+  
+  .inici {
+    background-image: url(../img/inici.png);
+  }
+  .explorar {
+    background-image: url(../img/explorar.png);
+  }
+  .penjar {
+    background-image: url(../img/penjar.png);
+  }
+  .biblioteca {
+    background-image: url(../img/biblioteca.png);
+  }
+  
+  .perfil {
+    background-image: url(../img/perfil.png);
+  }
+  
+  /* Pantalla welcome */
+  h1 {
+    color: white;
+    font-family: sf_pro_display;
+    position: absolute;
+    left: 2.75rem;
+    top: 20rem;
+  }
+  
+  #text {
+    color: white;
+    font-family: montserrat;
+    position: absolute;
+    left: 4.813rem;
+    top: 25rem;
+    font-size: 0.875rem;
+  }
+  br {
+    line-height: 1rem;
+  }
+  
+  #idioma,
+  #ubicacio {
+    width: 16rem;
+    height: 2rem;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 5rem;
+    color: rgb(255, 255, 255);
+    font-family: montserrat;
+    position: absolute;
+    left: 4.3rem;
+    top: 35rem;
+    padding: 0.1rem 1rem;
+    line-height: 2rem;
+  }
+  
+  #idioma input {
+    appearance: none;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px white solid;
+    position: relative;
+    left: 0.6rem;
+  }
+  
+  #idioma input:checked {
+    background: white;
+    border: 1px white solid;
+  }
+  
+  #idioma span {
+    margin: 0.6rem;
+  }
+  #ubicacio input {
+    appearance: none;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px white solid;
+    position: relative;
+    left: 0.6rem;
+  }
+  
+  #ubicacio input:checked {
+    background: white;
+    border: 1px white solid;
+  }
+  
+  #ubicacio span {
+    margin: 0.6rem;
+  }
+  
+  #ubicacio {
+    top: 38rem;
+  }
+  
+  #registra {
+    width: 346px;
+    height: 44px;
+    position: absolute;
+    color: #0a84ff;
+    padding: 14px 28px;
+    background-color: white;
+    border: 2px solid #ffff;
+    border-radius: 50px;
+    font-family: montserratbold;
+    margin-top: 41rem;
+    left: 22px;
+    transition: all 0.3s ease;
+  }
+  /*button:hover{
+    width: 346px;
+    height: 44px;
+    cursor: crosshair;
+    opacity: 1;
+    filter: contrast(120%);
+    background-color: white; border: 2px solid #0A84FF;
+    transition:0.5s;
+  }*/
+  #registra:hover {
+    background-color: white;
+    border: 3px solid #0a84ff;
+    background-image: url(../img/flecha.svg);
+    background-repeat: no-repeat;
+    background-position: 90%;
+  }
+  
+  #iniciar {
+    width: 346px;
+    height: 44px;
+    position: absolute;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ffff;
+    border-radius: 50px;
+    font-family: montserratbold;
+    margin-top: 45rem;
+    left: 22px;
+  }
+  #iniciar:hover {
+    background-color: transparent;
+    border: 3px solid #ffff;
+    background-image: url(../img/flechainiciar.svg);
+    background-repeat: no-repeat;
+    background-position: 90%;
+  }
+  
+  /* Pantalla carregant*/
+  #autor {
+    background-image: url(../img/gradient2.png);
+    background-size: cover;
+  }
+  #fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 390px;
+    height: 844px;
+    background-image: url(../img/gradient2\ 2.png);
+    background-size: cover;
+    opacity: 0;
+    animation: fondo 3s infinite;
+  }
+  @keyframes fondo {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #loading {
+    font-family: sf_pro_display;
+    margin-top: -5rem;
+    text-align: center;
+    margin-left: 7rem;
+    animation: mianimacion 3s infinite;
+  }
+  @keyframes mianimacion {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  :root {
+    /* Diámetro del lienzo y caja contenedora de
+         de la circunferencia animada. Cambiar su tamaño
+         cambia el de la circunferencia también, pero en forma
+         de escala */
+    --diametro: 100px;
+  }
+  
+  /*  El lienzo y su caja contenedora tienen las mismas proporciones */
+  .caja {
+    height: var(--diametro);
+    width: var(--diametro);
+  
+    /* Redondeo de las esquinas */
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 400px;
+  }
+  
+  .cir {
+    fill: none;
+  }
+  
+  .cir--fija {
+    stroke-width: 5;
+  }
+  
+  .cir--completando {
+    /* Grosor y color de línea*/
+    stroke-width: 10;
+    stroke: #ffffff;
+  
+    /* Matriz de guiones */
+    stroke-dasharray: 440;
+  
+    /* Desplazamiento de guiones */
+    stroke-dashoffset: 32.5;
+  }
+  
+  /* Clases con las animaciones definidas */
+  .giro-intervalo {
+    animation: 2s ease giro-intervalo infinite;
+  }
+  
+  /* Animación del trazo de la circunferencia */
+  .giro-trazo {
+    animation: 2s ease giro-trazo infinite;
+  }
+  
+  /* Completa un giro de 360 grados cada dos (02) segudos */
+  .giro-constante {
+    animation: 2s linear giro-constante infinite;
+  }
+  
+  /* Definición de las animaciones utilizadas en las clases anteriores */
+  
+  /* Completa un giro de 360 grados cada
+       dos (02) segundos con una duración de 
+       un (01) segundo */
+  @keyframes giro-intervalo {
+    0% {
+      transform: rotateZ(-449deg);
+    }
+  
+    50%,
+    100% {
+      transform: rotateZ(-90deg);
+    }
+  }
+  
+  /* Define el desplazamiento de los guiones (-) 
+       del trazo de la circunferencia en un período
+       de dos (02) segundos */
+  @keyframes giro-trazo {
+    50% {
+      stroke-dashoffset: 440;
+    }
+  }
+  
+  /* Giro constante de la caja contenedora de
+       la circunferencia animada */
+  @keyframes giro-constante {
+    from {
+      transform: rotateZ(-359deg);
+    }
+  }
+  
+  /* IMPORTANTE 
+       A partir de aquí, las reglas CSS que se definan, 
+       no formarán parte de la animación. El objetivo de las siguientes reglas CSS es ilustrar cómo se componen
+       la animación de carga */
+  
+  body {
+    margin: 0 auto;
+  }
+  
+  .marcas.caja {
+    position: relative;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 450px;
+    font-size: 3rem;
+    color: #808080;
+  }
+  
+  .flex > div {
+    flex-shrink: 0;
+  }
+  
+  /* pantalla perfil */
+  
+  #perfil {
+    background-image: url(../img/Fonsperfil.png);
+    background-size: cover;
+  }
+  
+  .fotoperfil {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    border-radius: 50%;
+    float: right;
+    left: 120px;
+    top: 160px;
+  }
+  
+  #perfiltext {
+    font-family: sf_pro_display;
+    top: 100px;
+    left: 100px;
+  }
+  
+  .liniaeditarperfil {
+    top: 370px;
+    left: 25px;
+    position: absolute;
+    float: right;
+  }
+  
+  #texttitular {
+    font-family: montserrat;
+    font-size: 14px;
+    color: white;
+    margin-top: 300px;
+    margin-left: 14px;
+    top: 100px;
+    left: 10px;
+  }
+  
+  #textusuari {
+    font-family: montserrat;
+    font-size: 14px;
+    color: white;
+    margin-top: 358px;
+    margin-left: 14px;
+    top: -10px;
+    left: 10px;
+  }
+  
+  .guardar {
+    top: 650px;
+    left: 22px;
+    position: absolute;
+    float: right;
+  }
+  
+  .tornar {
+    position: absolute;
+    border-radius: 50%;
+    float: right;
+    left: 25px;
+    top: 60px;
+  }
+  
+  /* pantalla triar foto */
+  
+  #triarfoto {
+    background-image: url(../img/Fonsperfil.png);
+    background-size: cover;
+    position: fixed;
+  }
+  
+  #triarfototext {
+    font-family: sf_pro_display;
+    top: 100px;
+    left: 100px;
+  }
+  
+  .iconatriarfoto {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    border-radius: 50%;
+    float: right;
+    left: 120px;
+    top: 160px;
+  }
+  
+  .galeria {
+    margin-top: 350px;
+  }
+  
+  .foto {
+    float: left;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 0;
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 130px;
+    height: 130px;
+  }
+  
+  .contenidor {
+    margin-top: 340px;
+  }
+  
+  img {
+    margin: 0;
+    line-height: 0;
+  }
+  
+  .foto:hover {
+    border: 1px solid white;
+    box-sizing: border-box;
+  }
+  
+  /*pantalla inici audios*/
+  #barrainici {
+    background-color: rgb(84 84 84 / 40%);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+  }
+  .filtres {
+    position: relative;
+    left: 22rem;
+    top: 3rem;
+  }
+  .Inici2 {
+    top: 0.7rem;
+    position: relative;
+    text-align: center;
+    left: 0;
+  }
+  .AudioTitol {
+    top: 7rem;
+    left: 1.8rem;
+    font-size: 2.3rem;
+    overflow-y: scroll;
+  }
+  .AudiosDestacats {
+    top: 10.3rem;
+    left: 1.8rem;
+    font-size: 1.4rem;
+  }
+  .slider {
+    width: 235vw;
+    height: 47vw;
+  }
+  .song {
+    width: 40vw;
+    height: 60vw;
+    margin: 3.5vw;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
+  .playlist {
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+  }
+  .musicadestacada {
+    margin-top: 12rem;
+  }
+  .AudiosValorats {
+    top: 29rem;
+    left: 1.8rem;
+    font-size: 1.4rem;
+  }
+  .misvalorados {
+    margin-top: 2.5rem;
+  }
+  .suggeriments {
+    margin-top: 2rem;
+  }
+  .AudiosSugerits {
+    top: 47.5rem;
+    left: 1.8rem;
+    font-size: 1.4rem;
+  }
+  h4 {
+    color: white;
+    width: 100%;
+    position: absolute;
+    font-family: Montserrat;
+    text-align: center;
+    top: 10.5rem;
+  }
+  h5 {
+    color: rgba(217, 213, 213, 0.867);
+    width: 100%;
+    position: absolute;
+    font-family: Montserrat;
+    text-align: center;
+    top: 12rem;
+    font-size: 0.9rem;
+  }
+  
+  .DocumentsDestacats {
+    margin-top: 6rem;
+  }
+  .EsquemesTitol {
+    top: 66rem;
+    left: 1.8rem;
+    font-size: 2.3rem;
+    overflow-y: scroll;
+  }
+  .EsquemesDestacats {
+    top: 69.3rem;
+    left: 1.8rem;
+    font-size: 1.4rem;
+  }
+  #excepcion {
+    color: rgba(217, 213, 213, 0.867);
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    font-family: Montserrat;
+    text-align: center;
+    top: 13.2rem;
+    font-size: 0.9rem;
+  }
+  .DocumentsValorats {
+    margin-top: 3rem;
+  }
+  .EsquemesValorats {
+    top: 88.5rem;
+    left: 1.8rem;
+    font-size: 1.4rem;
+  }
+  .DocumentsSuggerits {
+    margin-top: 3rem;
+  }
+  .EsquemesSuggerits {
+    top: 108rem;
+    left: 1.8rem;
+    font-size: 1.4rem;
+  }
+  .Autors {
+    margin-top: 6rem;
+  }
+  
+  .AutorTitol {
+    top: 127.3rem;
+    left: 1.8rem;
+    font-size: 2.3rem;
+    overflow-y: scroll;
+  }
+  .AutorsDestacats {
+    top: 130.3rem;
+    left: 1.8rem;
+    font-size: 1.4rem;
+  }
+  .AutorsValorats {
+    top: 150rem;
+    left: 1.8rem;
+  }
+  .CreadorsValorats {
+    margin-top: 3.5rem;
+  }
+  .CreadorsSuggerits {
+    margin-top: 3.3rem;
+    margin-bottom: 5rem;
+  }
+  .AutorsSuggerits {
+    top: 170rem;
+    left: 1.8rem;
+  }
+  
+  .asignatura {
+    font-family: montserrat;
+    font-size: 1.2rem;
+    top: 23.4rem;
+  }
+  
+  /*Visualització esquema*/
+  #fondo4p {
+    background-image: url(../img/4p.png);
+    background-size: cover;
+    z-index: 1000;
+    width: 25rem;
+    height: 55rem;
+    position: fixed;
+  }
+  .desenfoque {
+    width: 25rem;
+    height: 26rem;
+    backdrop-filter: blur(10px);
+    background-color: rgba(89, 83, 83, 0.496);
+    position: relative;
+    top: 34rem;
+    position: relative;
+  }
+  .generalitat {
+    top: 1.8rem;
+    max-width: 35%;
+    left: 7.5rem;
+    position: absolute;
+  }
+  .corazon {
+    top: 1.5rem;
+    max-width: 8%;
+    left: 17.5rem;
+    position: absolute;
+  }
+  .puntets {
+    top: 1.5rem;
+    max-width: 8%;
+    left: 20.5rem;
+    position: absolute;
+  }
+  h6 {
+    color: white;
+    z-index: 1000;
+    font-family: Montserrat;
+    top: 1.7rem;
+    position: absolute;
+    font-size: 1rem;
+    left: 0.8rem;
+  }
+  p {
+    color: rgba(217, 213, 213, 0.867);
+    z-index: 1000;
+    font-family: Montserrat;
+    top: 2.8rem;
+    position: absolute;
+    font-size: 1rem;
+    left: 0.8rem;
+  }
+  .detras {
+    max-width: 12%;
+    top: 7.8rem;
+    position: absolute;
+    left: 3rem;
+  }
+  .delante {
+    max-width: 12%;
+    top: 7.8rem;
+    position: absolute;
+    right: 4rem;
+  }
+  .noplay {
+    max-width: 9%;
+    top: 7.3rem;
+    position: absolute;
+    left: 11rem;
+  }
+  .comentaris {
+    max-width: 6%;
+    top: 14rem;
+    left: 4rem;
+    position: absolute;
+  }
+  .iconoesquema {
+    max-width: 8%;
+    top: 14rem;
+    left: 11rem;
+    position: absolute;
+  }
+  .info {
+    max-width: 6%;
+    top: 14rem;
+    right: 5rem;
+    position: absolute;
+  }
+  #esquematexto {
+    top: 16.5rem;
+    color: white;
+    left: 10.2rem;
+    position: absolute;
+    font-size: 0.8rem;
+  }
+  .linea {
+    position: absolute;
+    left: 11rem;
+    margin-top: 0.5rem;
+    max-width: 10%;
+  }
+  
+  /*Dani Audio Playing*/
+  
+  a {
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    transition-delay: 1s;
+  }
+  
+  #fons,
+  #fons_invert {
+    position: absolute;
+    width: 390px;
+    height: 844px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+  }
+  
+  .barra_enrere {
+    overflow: visible;
+    position: absolute;
+    width: 36px;
+    height: 5px;
+    left: 179.5px;
+    top: 55px;
+    cursor: pointer;
+  }
+  #barra_enrere {
+    opacity: 0.598;
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+  }
+  
+  .Descripcions_au {
+    left: 32px;
+    top: 92px;
+    position: absolute;
+    overflow: visible;
+    width: 167px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: montserratregular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  #Subautor {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    z-index: 999999;
+  }
+  
+  #lineart_effect2 {
+    margin: auto;
+    position: absolute;
+    top: 152px;
+    left: 8px;
+    width: 375px;
+    height: 375px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.511);
+    filter: drop-shadow(-3px -3px 6px rgba(255, 255, 255, 0.6));
+    animation: volta;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+  }
+  
+  .audio_photo {
+    position: relative;
+    left: 62.5px;
+    top: 62.5px;
+  }
+  
+  #fons_desenfocat {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 844px;
+    width: 390px;
+    -webkit-backdrop-filter: blur(29.643px);
+    backdrop-filter: blur(29.643px);
+  }
+  
+  .tirador {
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    left: 32px;
+    top: 554px;
+  }
+  .timelapse_barra2,
+  .timelapse_base {
+    opacity: 0.8;
+    background: white;
+    width: 326px;
+    height: 7px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.175));
+  }
+  
+  .timelapse_base {
+    position: relative;
+    top: -7px;
+  }
+  
+  #timelapse_barra2 {
+    opacity: 100%;
+    animation-name: fill;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+  
+  .contador1 {
+    position: absolute;
+    left: 0;
+    margin-top: 13px;
+    font-family: montserratregular;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contador2 {
+    position: absolute;
+    right: 65px;
+    margin-top: 13px;
+    font-family: montserratregular;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .gene_logo {
+    margin: 13px 0px 0 107px;
+  }
+  
+  .au_icon {
+    margin-right: 20px;
+    position: absolute;
+    left: 283px;
+    top: 95px;
+    float: left;
+  }
+  
+  #puntets {
+    position: absolute;
+    left: 48px;
+  }
+  
+  .play {
+    position: relative;
+    opacity: 1;
+    margin: -8px 0;
+    z-index: 9;
+  }
+  
+  .stop {
+    opacity: 0;
+    position: absolute;
+    left: 146px;
+    top: -8px;
+  }
+  
+  .multimedia {
+    position: absolute;
+    bottom: 161px;
+    left: 32px;
+    right: 32px;
+  }
+  
+  .multimedia .fletxa {
+    margin: 0 37px;
+  }
+  
+  .format_au {
+    position: absolute;
+    left: 67px;
+    bottom: 120px;
+  }
+  .format_au_text {
+    left: 0px;
+    top: 37.857px;
+    position: absolute;
+    overflow: visible;
+    width: 39px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: montserratregular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .format {
+    margin: 0 85px 0 85px;
+  }
+  
+  .disc_text {
+    margin: 9px 108px 0 110px;
+  }
+  
+  /*Dani Audio Playing 2 animation*/
+  
+  @keyframes volta {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fill {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 326px;
+    }
+  }
+  
+  audio {
+    opacity: 0%;
+    position: absolute;
+    top: 0;
+  }
+  
+  /*AUTORS Adrian Romera*/
+  
+  .gradient {
+    width: 390px;
+    height: 844px;
+    background: linear-gradient(transparent, #0d1e58, black);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .imagen {
+    width: 470px;
+    height: 924px;
+    background-image: url(../img/fondo\ Elisenda.png);
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  
+  .elipse {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url(../img/Elipse\ 248.png);
+    position: absolute;
+    background-size: 100%;
+    left: 70px;
+    top: 50px;
+    z-index: 8;
+  }
+  
+  p {
+    font-family: montserratregular;
+    font-size: 22px;
+    position: absolute;
+    top: 260px;
+    left: 45px;
+    color: white;
+  }
+  
+  p2 {
+    font-family: montserratregular;
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    top: 180px;
+    left: 6px;
+  }
+  
+  p3 {
+    font-family: montserratregular;
+    font-size: 15px;
+    position: absolute;
+    color: rgb(101, 101, 101);
+    top: 200px;
+    left: 30px;
+  }
+  
+  p4 {
+    font-family: montserratregular;
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    top: 180px;
+    left: 50px;
+  }
+  
+  p5 {
+    font-family: montserratregular;
+    font-size: 15px;
+    position: absolute;
+    color: rgb(155, 155, 155);
+    top: 200px;
+    left: 30px;
+  }
+  
+  .elipse2 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url(../img/Elipse\ 241.png);
+    position: absolute;
+    background-size: 100%;
+    left: 210px;
+    top: 400px;
+    z-index: 8;
+  }
+  
+  .elipse3 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url(../img/Elipse\ 243.png);
+    position: absolute;
+    background-size: 100%;
+    left: 15px;
+    top: 400px;
+    z-index: 8;
+  }
+  
+  .elipse4 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url(../img/Elipse\ 237.png);
+    position: absolute;
+    background-size: 100%;
+    left: 210px;
+    top: 650px;
+    z-index: 8;
+  }
+  
+  .elipse5 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url(../img/Elipse\ 238.png);
+    position: absolute;
+    background-size: 100%;
+    left: 15px;
+    top: 650px;
+    z-index: 8;
+  }
+  
+  .reproduir {
+    width: 190px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    z-index: 8;
+    top: 340px;
+    left: 100px;
+    opacity: 50%;
+    border-radius: 10px;
+  }
+  
+  .play2 {
+    border-top: 15px solid transparent;
+    border-left: 25px solid white;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    z-index: 8;
+    top: 350px;
+    left: 120px;
+  }
+  
+  p6 {
+    font-family: montserratregular;
+    position: absolute;
+    top: 355px;
+    left: 170px;
+    color: white;
+    z-index: 8;
+    opacity: 100%;
+  }
+  
+  .enrere {
+    position: fixed;
+    top: 46px;
+    left: 14px;
+    z-index: 9;
+    width: 200px;
+    height: 200px;
+  }
+  
